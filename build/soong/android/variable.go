@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+        Disable_ashmem_tracking struct {
+		Cflags []string
+        }
 	Egl_workaround_bug_10194508 struct {
 		Cppflags []string
 	}
@@ -31,6 +34,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Disable_ashmem_tracking    *bool `json:",omitempty"`
 	Egl_workaround_bug_10194508    *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_legacy_camera_hal1_dyn_native_handle  *bool `json:",omitempty"`
