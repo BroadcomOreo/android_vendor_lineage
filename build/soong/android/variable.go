@@ -1,5 +1,8 @@
 package android
 type Product_variables struct {
+        Force_screenshot_cpu_path struct {
+                Cppflags []string
+        }	
         Disable_ashmem_tracking struct {
 		Cflags []string
         }
