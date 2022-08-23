@@ -37,7 +37,6 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
-	Force_screenshot_cpu_path    *bool `json:",omitempty"`	
 	Disable_ashmem_tracking    *bool `json:",omitempty"`
 	Egl_workaround_bug_10194508    *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
