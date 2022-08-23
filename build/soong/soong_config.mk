@@ -4,6 +4,7 @@ lineage_soong:
 	$(hide) (\
 	echo '{'; \
 	echo '"Lineage": {'; \
+	echo '    "Force_screenshot_cpu_path": $(if $(filter true,$(BOARD_FORCE_SCREENSHOT_CPU_PATH)),true,false),'; \	
 	echo '    "Disable_ashmem_tracking": $(if $(filter true,$(TARGET_DISABLE_ASHMEM_TRACKING)),true,false),'; \
 	echo '    "Egl_workaround_bug_10194508": $(if $(filter true,$(BOARD_EGL_WORKAROUND_BUG_10194508)),true,false),'; \
 	echo '    "Has_legacy_camera_hal1": $(if $(filter true,$(TARGET_HAS_LEGACY_CAMERA_HAL1)),true,false),'; \
