@@ -1,8 +1,5 @@
 package android
-type Product_variables struct {
-        Force_screenshot_cpu_path struct {
-                Cppflags []string
-        }	
+type Product_variables struct {	
         Disable_ashmem_tracking struct {
 		Cflags []string
         }
@@ -30,6 +27,9 @@ type Product_variables struct {
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
 	}
+        Force_screenshot_cpu_path struct {
+                Cppflags []string
+        }	
 	Uses_qti_camera_device struct {
 		Cppflags []string
 		Shared_libs []string
